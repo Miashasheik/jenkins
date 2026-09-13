@@ -14,11 +14,12 @@ pipeline {
                     sh """
                      echo "building"
                      echo $COURSE
-                     
+
                     """
                }
             }
         }
+        
         stage('Test') {
             steps {
                  script{
