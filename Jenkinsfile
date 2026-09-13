@@ -1,6 +1,9 @@
 pipeline {
-    agent any
-
+    agent {
+         node { 
+            label 'roboshop' 
+            } 
+         }
      environment {
             COURSE="jenkins"
         }
